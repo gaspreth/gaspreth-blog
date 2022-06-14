@@ -1,25 +1,13 @@
 // import { useState, useEffect } from "react";
-// import Markdown from "markdown-to-jsx";
+import Markdown from "markdown-to-jsx";
 
-// async function main() {
-//   const file = await read('../data/kelly_criterion.md');
-//   console.log(file);
-//   return (
-//       <div className="text-white">
-//         <Markdown>{file}</Markdown>
-//       </div>
-//     );
-//   return (<p>banana</p>);
-// }
+// TODO: open article files & routing
+function Post() {
+  return (
+    <div className="text-3xl text-white">
+      <Markdown># Hello</Markdown>
+    </div>
+  );
+}
 
-// function Post() {
-//   return (
-//     <div>
-//       {/* main(); */}
-//       <p>banana</p>
-//     </div>
-//   );
-// }
-
-
-// export default Post;
+export default Post;
