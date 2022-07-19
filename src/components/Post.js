@@ -1,11 +1,29 @@
-// import { useState, useEffect } from "react";
-import Markdown from "markdown-to-jsx";
+import { useState, useEffect } from "react";
+import ReactMarkdown from 'react-markdown';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
-// TODO: open article files & routing
-function Post() {
+
+function Post(props) {
+  let fileName = props.article.fileName;
+  const [content, setContent] = useState('');
+
+  useEffect(() => {
+    import(`../data/${fileName}`)
+    .then(res => {
+      fetch(res.default)
+      .then(res => res.text())
+      .then(res => setContent(res))
+    })
+    .catch(err => console.log(err));
+  });
+
   return (
-    <div className="text-3xl text-white">
-      <Markdown># Hello</Markdown>
+    <div className="container flex justify-center mx-auto text-white text-left items-center">
+      <div className="w-2/3 mx-auto my-12">
+        <ReactMarkdown children={content} remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]} />
+      </div>
     </div>
   );
 }

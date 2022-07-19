@@ -1,17 +1,16 @@
 import { posts } from "../data/posts";
+import {Link} from "react-router-dom";
 
 function Landing() {
   return (
     <div className="bg-black">
       <div className="container flex justify-center mx-auto text-white items-center">
-        {/* <h1 className="text-3xl">Blog posts</h1> */}
         <div className="w-2/3 mx-auto my-12">
           {posts.map((post) => (
-            <a href={post.fileName.slice(0,-3)} className="w-full text-left"> 
-              <h1 className="text-2xl">{post.title}</h1>
-              <p className="text-gray-400"><b>TL;DR </b>{post.tldr}</p>
-              <br /><br />
-            </a>
+            <Link to={post.fileName.slice(0,-3)} key={post.title} className="w-full text-left text-white"> 
+              <h1>{post.title}</h1>
+              <p><b>TL;DR </b>{post.tldr}</p>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+html {
+  background-color: black;
+}
+
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  p {
+    @apply text-gray-400 pb-8
+  }
+  a {
+    @apply text-cyan-600
+  }
+}
