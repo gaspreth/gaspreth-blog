@@ -12,9 +12,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Landing />} />
+          <Route path='/gaspreth-blog/' element={<Landing />} />
           {posts.map(post => (
-            <Route key={post.title} path={post.fileName.slice(0,-3)} element={<Post article={post} />} />
+            <Route key={post.title} path={"/gaspreth-blog/"+post.fileName.slice(0,-3)} element={<Post article={post} />} />
           ))}
           <Route path='*' element={<div className='text-white'>Sorry nothing to see on this link!</div>} />
         </Routes>
