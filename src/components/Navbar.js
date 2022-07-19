@@ -4,7 +4,7 @@ function Navbar() {
     <header className="bg-black top-0">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="title-font font-medium text-white mb-4 md:mb-0">
-          <a href="#" className="ml-3 text-xl text-green-300">gaspreth</a>
+          <a href="/" className="ml-3 text-xl text-green-300">gaspreth-blog</a>
         </a>
         <div className="md:mr-auto flex flex-wrap">
         </div>
