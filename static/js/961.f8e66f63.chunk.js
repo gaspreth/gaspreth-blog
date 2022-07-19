@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgaspreth_blog=self.webpackChunkgaspreth_blog||[]).push([[961],{9961:function(e,s,t){e.exports=t.p+"static/media/kelly_criterion.d35be8111888beda1e54.md"}}]);
