@@ -3,7 +3,7 @@ function Navbar() {
   return (
     <header className="bg-black top-0">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a href="/" className="ml-3 text-2xl text-green-300">gaspreth-blog</a>
+        <a href="/gaspreth-blog/" className="ml-3 text-2xl text-green-300">gaspreth-blog</a>
         <div className="md:mr-auto flex flex-wrap">
         </div>
         <a href="https://twitter.com/gaspreth/">

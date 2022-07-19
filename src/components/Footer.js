@@ -3,7 +3,6 @@ function Footer() {
   return (
       <section id="footer">
           <div className="container text-gray-400 bottom-0 mx-auto divide-y divide-gray-800">
-              {/* TODO add contact form (to learn useState) */}
               <div className="py-3 items-center">
                   <ul className="flex w-full">
                       <li className="w-1/3"><a className="text-gray-400" href="mailto:gaspreth@gmail.com">gaspreth@gmail.com</a></li>
